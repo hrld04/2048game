@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Game</title>
+    <link rel="stylesheet" href="proj.css">
+    <script src="/2048.js"></script>
+</head>
+<body>
+    <div class="main_game">
+        <div class="main_row">
+            <div class="column">
+                <button id="newGameBtn">New Game</button>
+            </div>
+            <div class="column">
+                <h2><span id="score">Score: 0</span></h2> 
+            </div>
+            
+        </div>  
+        <div id="board">
+            
+        </div>  
+
+    </div>
+
+    <div class="controller_btn">
+        <button id="moveLeftBtn"><img class="btn" src="/assets/left.png"></button>
+        <button id="moveUpBtn"><img class="btn" src="/assets/up.png"></button>
+        <button id="moveRightBtn"><img class="btn" src="/assets/right.png"></button>
+        <button id="moveDownBtn"><img class="btn" src="/assets/down.png"></button>
+    </div>
+    
+    
+    
+
+    <div class="rec_leaderboards">
+        <div class="header">
+            <img src="/assets/LOGO.png" alt="logo" class="img_logo"> 
+        </div>
+        <p class="new_rec"> New Record: <span id="record"></span></p>     
+        <p class="rec"><span id="leaderboard"></span></p>
+        <button id="resetLeaderboardBtn">Reset Leaderboard</button> 
+        <button id="resetNewRecordBtn">Reset New Record</button> 
+        <br><br><br><hr>
+           
+            <h1> Agree to the Terms of Service and Privacy Policy </h1>   
+            <hr>
+            <div class="agree">
+                <label>
+                  <input id="agreeCheckbox" type="checkbox" checked="checked">
+                </label>
+                <p> I agree to the <em> Terms of Service </em> and <em>Privacy Policy</em></p>
+            </div>
+
+    </div>
+   
+    <audio id="gameOverSound" src="/assets/gameover_soundeffect.mp3"></audio>
+    <audio id="newrec_sound" src="/assets/winner_soundeffect.mp3"></audio>
+    <div class="sound">
+        <button id="stopMusicBtn"><img class="play" src="/assets/pause.png"></button>
+        <button id="playMusicBtn"><img class="stop" src="/assets/play-button.png"></button>
+        <audio id="bg_music" loop>
+            <source src="/assets/bgmusic.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+
+  
+</body>
+</html>

@@ -1,0 +1,265 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    background-color:#8d5ed8;
+}
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+   .main_row {
+      flex-direction: column;
+      align-items: center;
+  }
+  .column {
+      margin-bottom: 10px;
+  }
+   .rec_leaderboards {
+       text-align: center;
+   }
+   .rec_leaderboards {
+      display: none; /* Hide the side bar on smaller screens */
+  }
+}
+
+.main_game {
+   margin: 100px;
+}
+
+#board {
+    width:400px;
+    height:400px ;
+    margin:auto;
+    display:flex ;
+    flex-wrap:wrap;
+    border-radius:10px;
+}
+
+.img_logo {
+   width: 100px;
+}
+
+.rec {
+   font-size: 25px;
+   font-family:cursive;
+}
+
+.new_rec {
+   font-size: 25px;
+   font-family:cursive;
+   background-color: #7dc734;
+   padding: 15px;
+   margin: auto;
+   color:floralwhite;
+}
+
+#score {
+   font-size: 20px;
+   font-family: cursive;
+   color: white;
+}
+
+
+.tile {
+    width:90px;
+    height: 90px;
+    background-color: #3d2963;
+    border: 5px solid 8151cf;
+    margin: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+ /*colored tiles */
+
+ .x2 {
+    background-color: #41c9b8;
+    color:white;
+ }
+ .x4 {
+    background-color:rgb(169, 187, 9);
+    color:white;
+ }
+ .x8 {
+    background-color: #ed5471;
+    color:white;
+ }
+ .x16 {
+    background-color: #c43362;
+    color:white;
+ }
+ .x32 {
+    background-color: #b81c64;
+    color:white;
+ }
+ .x64 {
+    background-color: #9e005d;
+    color:white;
+ }
+ .x128 {
+    background-color: #ffb33c;
+    color:white;
+ }
+ .x256 {
+    background-color: #f68530;
+    color:white;
+ }
+ .x512 {
+    background-color: #edc651;
+    color:white;
+ }
+ .x1024 {
+    background-color: #ecc230;
+    color:white;
+ }
+ .x2048 {
+    background-color: #fe3d3d;
+    color:white;
+ }
+ .x4096 {
+    background-color: #ff2020;
+    color:white;
+ }
+
+ .rec_leaderboards {
+   background-color:#3d2963;
+   box-shadow: 5px 10px #3d2963;
+   text-align: center;
+   height: fit-content;
+   color:whitesmoke;
+   height: 100%;
+   width: 300px;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   overflow-x: hidden;
+   padding-top: 20px;
+ }
+ 
+ .header {
+   text-align: center;
+   margin-bottom: 30px;
+ }
+
+ #resetLeaderboardBtn {
+   background-color: #ed5471;
+   border: none;
+   color: white;
+   padding: 15px;
+   width: 100%;
+   font-family: cursive;
+   font-size: 20px;
+ }
+
+.main_row {
+   display: flex;
+   margin: auto;
+   width: 25%;
+   align-items: center;
+   text-align: center;
+   margin-bottom: 30px;
+ }
+ .column {
+   float: left;
+   flex: 50%;
+ }
+ /* Clear floats after the columns */
+.row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ #newGameBtn {
+   padding: 15px;
+   border-radius: 10px;
+   width: 80%;
+   background-color: rgb(25, 206, 25);
+   border: none;
+   color: white;
+   font-family: cursive;
+   font-size: 20px;
+ }
+ .check{
+   width:100%;
+   height:100vw;
+   background: whitesmoke;
+   color:black;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+ }
+ .box{
+   margin-top:5vw;
+   width:120vw;
+   padding:15vw;
+   border: 5px solid black;
+   border-radius: 15px;
+  }
+  h1{
+   font-size:1rem;
+   font-family:Arial;
+   }
+  hr{
+    width:95vw;
+  }
+  .agree{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+  }
+  .agree p {
+   font-size:1rem;
+  }
+
+  label{
+    position: relative;
+    width:20px;
+    height:20px;
+    margin-bottom:17px;
+
+   }
+   input{
+     width:100%;
+     height:100%;
+     position: absolute;
+  }
+
+  #stopMusicBtn, #playMusicBtn {
+   background-color:#8d5ed8;
+   border: none;
+  }
+
+  .sound {
+   display: flex;
+   float: right;
+   margin-top: -650px;
+  }
+
+  .play, .stop {
+   width: 50px;
+   height: 50px;
+  }
+
+   .controller_btn {
+   justify-content: center;
+   display: flex;
+   margin-top: -50px;
+  }
+  
+  #moveLeftBtn, #moveUpBtn, #moveRightBtn, #moveDownBtn {
+   padding: 0;
+   margin: 10px;
+   background-color: #8d5ed8;
+   border: none;
+  }
+
+  .btn {
+   width: 70px;
+   background-color: none;
+
+  }
+  
+
